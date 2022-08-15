@@ -41,7 +41,7 @@ __FBSDID("$FreeBSD$");
 #include <strings.h>
 #include <unistd.h>
 
-#define	PTR_WIDTH ((int)(sizeof(void *) * 2 + 2))
+#define	PTR_WIDTH ((int)(sizeof(vaddr_t) * 2 + 2))
 
 static void printmod(int);
 static void printfile(int, int, int);

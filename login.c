@@ -10,7 +10,7 @@ struct user {
   char user_id[ID_LENGTH];
   // should be 0 for non admin users
   int admin;
-} u;
+} __subobject_use_container_bounds u;
 
 char get_random_char(){
   return 'A' + (random() % 26);

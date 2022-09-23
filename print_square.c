@@ -1,21 +1,8 @@
 #include <stdio.h>
 
-static int get_pointer_size_in_bits(){
-    // size in bytes
-    int size = sizeof(void*);
-    // check if pointer size is 32 bit or 64 bits
-    if(size*8==32){
-        printf("%s","This program supports 32 bit machines");
-        return 32;
-    }else{
-        printf("%s","This program supports 64 bits machines"); 
-        return 64;
-    }
-}
-
 int main(void) {
 
-    int pointer_size = get_pointer_size_in_bits();
+    int pointer_size = 32;
 
     const char *spaces="                                         "; 
     const char *dashes="-----------------------------------------";
